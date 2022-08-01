@@ -1,0 +1,31 @@
+<script>
+export default {
+  name: 'PanelContent',
+  props: {
+    heading: String,
+    content: String,
+  },
+  components: {
+    
+  },
+  data () {
+    return {
+      
+    }
+  }
+}
+</script> 
+
+<template>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{ heading }}</h3>
+    </div>
+    <div class="panel-body">Panel content</div>
+  </div>
+</template>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+
+</style>
