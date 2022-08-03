@@ -1,16 +1,16 @@
 
 <script>
-import BarchartView from "./BarchartView.vue";
+import ChartView from "./ChartView.vue";
 import SectionHeader from "./SectionHeader.vue";
 import PanelContent from "./PanelContent.vue";
-import TableContent from "./TableContent.vue";
+import PanelTable from "./PanelTable.vue";
 export default {
   name: "Netwrix9",
   components: {
-    BarchartView,
+    ChartView,
     SectionHeader,
     PanelContent,
-    TableContent
+    PanelTable
   },
   data() {
     return {};
@@ -24,14 +24,14 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-md-12">
-            <BarchartView heading="Top Shares By Sensitive File Count" />
+            <ChartView heading="Top Shares By Sensitive File Count" />
           </div>
           <div class="col-xl-6 col-md-12">
             <PanelContent heading="Top Shares by Sensitive File Count" />
           </div>
         </div>
         <div class="col-xl-12">
-          <TableContent heading="File Details" />
+          <PanelTable heading="File Details" />
         </div>
       </div>
     </div>

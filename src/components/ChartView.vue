@@ -1,12 +1,13 @@
 <script>
-import BarChart from './BarChart.vue'
+import Chart from './Chart.vue'
 export default {
-  name: 'BarchartView',
+  name: 'chartView',
   props: {
     heading: String,
+    chartData: Object
   },
   components: {
-    BarChart
+    Chart
   },
   data () {
     return {
@@ -22,7 +23,7 @@ export default {
             <h3 class="panel-title">{{ heading }}</h3>
         </div>
         <div class="panel-body">
-            <BarChart></BarChart>
+            <Chart :chartData="chartData"></Chart>
         </div>
     </div>
 </template>

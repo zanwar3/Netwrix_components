@@ -21,7 +21,9 @@ export default {
     <div class="panel-heading">
       <h3 class="panel-title">{{ heading }}</h3>
     </div>
-    <div class="panel-body">Panel content</div>
+    <div class="panel-body">
+      <!-- <PanelTable heading="File Details" /> -->
+    </div>
   </div>
 </template>
 
