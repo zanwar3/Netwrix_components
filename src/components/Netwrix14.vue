@@ -74,6 +74,7 @@ export default {
         ],
       ],
       filters: ["filter", "dropdown", "arrows"],
+      breadList:['Home','File System','Activity','Least Privileged Access','Overprovisioning Risk by Share']
     };
   },
 };
@@ -81,7 +82,7 @@ export default {
 
 <template>
   <div>
-    <AppHeader/>
+    <AppHeader :items="breadList"/>
     <div class="main_section">
       <SectionHeader
         heading="Overprovisioning Risk by Share"
@@ -89,14 +90,14 @@ export default {
       />
       <div class="container">
         <div class="row">
-          <div class="col-xl-6 col-md-12">
+          <div class="col-md-12">
             <chartView
               heading="Shares by Overprovisioning Risk"
               :chartData="sesitiveFilesChart"
             />
           </div>
         </div>
-        <div class="col-xl-12">
+        <div class="col-lg-12">
           <PanelTable
             heading="File Details"
             :tableData="fileDetails"
@@ -112,10 +113,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.main-back{
+    background: #f5f5f5;
+  mix-blend-mode: normal;
+  opacity: 0.88;
+}
 .main_section {
   background: #f5f5f5;
   mix-blend-mode: normal;
   opacity: 0.88;
   min-height: 100vh;
+  padding-left:15%;
 }
 </style>
