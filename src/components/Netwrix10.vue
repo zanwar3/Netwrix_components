@@ -1,5 +1,6 @@
 
 <script>
+import AppHeader from "./AppHeader.vue";
 import ChartView from "./ChartView.vue";
 import SectionHeader from "./SectionHeader.vue";
 import PanelTable from "./PanelTable.vue";
@@ -7,6 +8,7 @@ import PanelTabsTable from "./PanelTabsTable.vue";
 export default {
   name: "Netwrix8",
   components: {
+    AppHeader,
     ChartView,
     SectionHeader,
     PanelTable,
@@ -67,6 +69,7 @@ export default {
 <template>
   <div>
     <div class="main_section">
+      <AppHeader :items="['Home','File System','Security Assesment']"/>
       <SectionHeader
         heading="Shares with Sensitive Content"
         content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access."

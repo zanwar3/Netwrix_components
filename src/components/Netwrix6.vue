@@ -1,5 +1,6 @@
 
 <script>
+import AppHeader from "./AppHeader.vue";
 import Netwrix6Part from "./Netwrix6Part.vue";
 import Netwrix6Part2 from "./Netwrix6Part2.vue";
 import ChartView from "./ChartView.vue";
@@ -7,6 +8,7 @@ import PanelTable from "./PanelTable.vue";
 export default {
   name: "Netwrix6",
   components: {
+    AppHeader,
     Netwrix6Part,
     Netwrix6Part2,
     ChartView,
@@ -39,6 +41,7 @@ export default {
 </script>
 <template>
   <div class="">
+    <AppHeader :items="['Home','File System']"/>
     <div class="container">
       <Netwrix6Part />
       <div class="statistics_section_main">

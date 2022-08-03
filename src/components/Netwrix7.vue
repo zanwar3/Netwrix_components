@@ -1,9 +1,11 @@
 
 <script>
+  import AppHeader from './AppHeader.vue'
   import Netwrix7Part from './Netwrix7Part.vue'
   export default {
     name: 'Netwrix7',
     components: {
+      AppHeader,
       Netwrix7Part
     },
     data() {
@@ -15,6 +17,7 @@
 </script>
 <template>
   <div class="main_section">
+    <AppHeader :items="['Home','File System']"/>
     <div class="container">
       <div class="col-12">
         <div class="solutionsets_section">

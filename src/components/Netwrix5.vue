@@ -1,11 +1,14 @@
 
 <script>
+  import AppHeader from './AppHeader.vue'
   import Netwrix3Part from './Netwrix3Part.vue'
   import Netwrix5Part from './Netwrix5Part.vue'
   export default {
     name: 'Netwrix5',
     components: {
-      Netwrix3Part, Netwrix5Part
+      Netwrix3Part, 
+      Netwrix5Part,
+      AppHeader
     },
     data() {
       return {
@@ -16,10 +19,11 @@
 </script>
 <template>
   <div class="main_section">
+    <AppHeader :items="[]"/>
     <div class="container">
       <div class="col-12">
         <div class="row">
-          <div class="col-xl-8 col-md-12">
+          <div class="col-xl-16 col-md-16">
             <div class="solutionsets_section">
               <h5>Solution Sets</h5>
               <div class="content_section">
@@ -43,7 +47,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-md-12">
+          <div class="col-xl-8 col-md-8">
             <div class="reports_section">
               <h5>Search for reports</h5>
               <Netwrix5Part />

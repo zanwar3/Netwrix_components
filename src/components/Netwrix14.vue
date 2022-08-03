@@ -90,7 +90,7 @@ export default {
       />
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-24">
             <chartView
               heading="Shares by Overprovisioning Risk"
               :chartData="sesitiveFilesChart"
@@ -123,6 +123,5 @@ export default {
   mix-blend-mode: normal;
   opacity: 0.88;
   min-height: 100vh;
-  padding-left:15%;
 }
 </style>

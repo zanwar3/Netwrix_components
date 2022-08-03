@@ -1,10 +1,12 @@
 
 <script>
   import Netwrix3Part from './Netwrix3Part.vue'
+  import AppHeader from './AppHeader.vue'
   export default {
     name: 'Netwrix3',
     components: {
-      Netwrix3Part
+      Netwrix3Part,
+      AppHeader
     },
     data() {
       return {
@@ -14,7 +16,9 @@
   }
 </script>
 <template>
+  
   <div class="main_section">
+    <AppHeader :items="[]"/>
     <div class="container">
       <div class="solutionsets_section">
         <h5>Solution Sets</h5>
