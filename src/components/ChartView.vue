@@ -22,7 +22,7 @@ export default {
         <div class="panel-heading">
             <h3 class="panel-title">{{ heading }}</h3>
         </div>
-        <div class="panel-body">
+        <div class="panel-body" style="background-color:#fff">
             <Chart :chartData="chartData"></Chart>
         </div>
     </div>

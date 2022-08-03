@@ -4,6 +4,7 @@ import ChartView from "./ChartView.vue";
 import SectionHeader from "./SectionHeader.vue";
 import PanelContent from "./PanelContent.vue";
 import PanelTable from "./PanelTable.vue";
+import PanelTabsTable from "./PanelTabsTable.vue";
 export default {
   name: "Netwrix17",
   components: {
@@ -11,6 +12,7 @@ export default {
     SectionHeader,
     PanelContent,
     PanelTable,
+    PanelTabsTable,
   },
   data() {
     return {
@@ -28,7 +30,7 @@ export default {
             {
               axis: "y",
               label: "Sensitive Files",
-              data: [37, 19, 19, 19, 19,0],
+              data: [37, 19, 19, 19, 19, 0],
               fill: false,
               backgroundColor: "rgba(52, 191, 70, 0.5)",
               borderColor: "1px solid #29CC6A",
@@ -37,12 +39,12 @@ export default {
             {
               axis: "y",
               label: "Sensitive Files",
-              data: [37, 12, 12, 12, 12,0],
+              data: [37, 12, 12, 12, 12, 0],
               fill: false,
               backgroundColor: "rgba(255, 71, 81, 0.5)",
               borderColor: "1px solid #FC5555",
               borderWidth: 1,
-            }
+            },
           ],
         },
         options: {
@@ -81,7 +83,24 @@ export default {
         ["Share Access > GDPR", 12],
         ["Share Access > Credit Cards", 12],
       ],
-      filters: ["filter", "dropdown", "arrows"],
+      tabsData: [
+        "Credentials",
+        "Credit cards",
+        "ePHI",
+        "GDPR",
+        "Health Data",
+        "PII",
+      ],
+      userAttackPaths: [
+        ["User","Attack Path"],
+        ["ENT\\MiguelSeverino","ENT\\MiguelSeverino <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\AndreasSchou","ENT\\AndreasSchou <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\AxelDelgado","ENT\\AxelDelgado <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Local Admin</a>: ENT\\FS02 <i class='fa fa-long-arrow-left' aria-hidden='true'></i> +2 steps   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\BorisScholl","ENT\\BorisScholl <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Finance   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\ChrisBryant","ENT\\ChrisBryant <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Reset Password</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\DenisDehenne","ENT\\DenisDehenne <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\LucaDellamore","ENT\\LucaDellamore <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+      ],
     };
   },
 };
@@ -96,7 +115,10 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-md-12">
-            <ChartView heading="Top Shares By Sensitive File Count" :chartData="sesitiveFilesChart"/>
+            <ChartView
+              heading="Top Shares By Sensitive File Count"
+              :chartData="sesitiveFilesChart"
+            />
           </div>
           <div class="col-xl-6 col-md-12">
             <PanelTable
@@ -119,6 +141,17 @@ export default {
               heading="Vulnerabilities"
               :tableData="vulnerabilities"
               :filters="['filter']"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-24">
+            <PanelTabsTable
+              heading=" "
+              :tableData="userAttackPaths"
+              :tabsData="tabsData"
+              :filters="['filter']"
+              :tabsHeading="'Target'"
             />
           </div>
         </div>
