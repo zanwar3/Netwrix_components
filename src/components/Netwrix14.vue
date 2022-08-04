@@ -112,7 +112,7 @@ export default {
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .main-back{
     background: #f5f5f5;
   mix-blend-mode: normal;
