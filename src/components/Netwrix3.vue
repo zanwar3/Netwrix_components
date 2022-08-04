@@ -65,7 +65,7 @@
 .solutionsets_section h5 {
   background: #4CD7CE;
   margin: 0px;
-  padding: 5px 10px;
+  padding: 12px 15px;
   color: #fff;
 }
 </style>

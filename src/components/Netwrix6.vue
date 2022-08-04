@@ -40,7 +40,7 @@ export default {
 };
 </script>
 <template>
-  <div class="">
+  <div class="main_section">
     <AppHeader :items="['Home','File System']"/>
     <div class="container">
       <Netwrix6Part />

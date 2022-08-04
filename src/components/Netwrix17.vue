@@ -95,13 +95,13 @@ export default {
       ],
       userAttackPaths: [
         ["User","Attack Path"],
-        ["ENT\\MiguelSeverino","ENT\\MiguelSeverino <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
-        ["ENT\\AndreasSchou","ENT\\AndreasSchou <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
-        ["ENT\\AxelDelgado","ENT\\AxelDelgado <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Local Admin</a>: ENT\\FS02 <i class='fa fa-long-arrow-left' aria-hidden='true'></i> +2 steps   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
-        ["ENT\\BorisScholl","ENT\\BorisScholl <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Finance   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
-        ["ENT\\ChrisBryant","ENT\\ChrisBryant <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Reset Password</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
-        ["ENT\\DenisDehenne","ENT\\DenisDehenne <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
-        ["ENT\\LucaDellamore","ENT\\LucaDellamore <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\MiguelSeverino","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A;'></i> ENT\\MiguelSeverino <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\AndreasSchou","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A'></i> ENT\\AndreasSchou <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\AxelDelgado","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A'></i> ENT\\AxelDelgado <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Local Admin</a>: ENT\\FS02 <i class='fa fa-long-arrow-left' aria-hidden='true'></i> +2 steps   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\BorisScholl","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A'></i> ENT\\BorisScholl <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Finance   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\ChrisBryant","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A'></i> ENT\\ChrisBryant <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Reset Password</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\DenisDehenne","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A'></i> ENT\\DenisDehenne <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
+        ["ENT\\LucaDellamore","<i class='fa fa-plus-circle fa-lg' aria-hidden='true' style='color:#29CC6A'></i> ENT\\LucaDellamore <i class='fa fa-long-arrow-right' aria-hidden='true'></i> <a href='#'>Modify Group Membership</a>: ENT\\Domain Admins   <i class='fa fa-long-arrow-right' aria-hidden='true'></i>     <a href='#'>Share Access</a>: Credentials"],
       ],
     };
   },
@@ -155,6 +155,7 @@ export default {
               :tabsData="tabsData"
               :filters="['filter']"
               :tabsHeading="'Target'"
+              :activeTab="0"
             />
           </div>
         </div>

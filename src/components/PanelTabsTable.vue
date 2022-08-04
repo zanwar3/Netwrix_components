@@ -7,6 +7,7 @@ export default {
     tabsHeading: String,
     tableData: Array,
     filters: Array,
+    activeTab: Number
   },
   components: {},
   data() {
@@ -44,8 +45,8 @@ export default {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="dataRow in tabsData">
-                <td scope="row">
+              <tr v-for="(dataRow,index) in tabsData">
+                <td scope="row" :class="{'active-tab' : index == activeTab}">
                   {{ dataRow }}
                 </td>
               </tr>
