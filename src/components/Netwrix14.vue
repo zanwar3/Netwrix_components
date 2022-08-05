@@ -94,6 +94,7 @@ export default {
             <chartView
               heading="Shares by Overprovisioning Risk"
               :chartData="sesitiveFilesChart"
+              :align="'left'"
             />
           </div>
         </div>

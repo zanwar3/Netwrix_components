@@ -4,7 +4,8 @@ export default {
   name: 'chartView',
   props: {
     heading: String,
-    chartData: Object
+    chartData: Object,
+    align: String,
   },
   components: {
     Chart
@@ -23,12 +24,17 @@ export default {
             <h3 class="panel-title">{{ heading }}</h3>
         </div>
         <div class="panel-body" style="background-color:#fff">
-            <Chart :chartData="chartData"></Chart>
+            <div :class="{'left-chart': align == 'left'}">
+              <Chart :chartData="chartData" ></Chart>
+            </div>
+            
         </div>
     </div>
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  .left-chart{
+    width: 50%;
+  }
 </style>

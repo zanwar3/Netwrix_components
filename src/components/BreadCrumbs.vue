@@ -61,11 +61,16 @@ a {
   color: #354556;
 }
 ol.breadcrumb li + li:before {
-  padding: 8px;
+  padding: 5px;
   color: black;
   content: "";
 }
-.breadcrumb-section{
+.breadcrumb-section {
   background-color: #fff;
+}
+.breadcrumb {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
 }
 </style>

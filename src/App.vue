@@ -11,7 +11,9 @@ export default {
 </script>
 
 <style>
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
   margin: 0px;
 }
@@ -23,16 +25,12 @@ body {
   line-height: 20px;
   color: #354556;
 }
+.container{
+  width:1100px;
+  margin:auto;
+}
+a{
+      text-decoration:none;
+}
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.flex-item-left {
-  flex: 50%;
-}
-
-.flex-item-right {
-  flex: 50%;
-}
 </style>

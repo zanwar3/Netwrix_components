@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav class="navbar">
-      <div class="container-fluid">
+    <div>
+      <nav class="navbar">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
             <svg
@@ -40,55 +40,59 @@
           </a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a class="left-nav" href="#">Reports</a></li>
-          <li><a href="#" class="left-nav">Access</a></li>
+          <li class="active nav-links">
+            <a class="left-nav" href="#">Reports</a>
+          </li>
+          <li class="nav-links"><a href="#" class="left-nav">Access</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a class="right-nav" href="#">
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M31.5 16C31.5 24.5604 24.5604 31.5 16 31.5C7.43959 31.5 0.5 24.5604 0.5 16C0.5 7.43959 7.43959 0.5 16 0.5C24.5604 0.5 31.5 7.43959 31.5 16Z"
-                  fill="#F6F7F9"
-                  stroke="#ABB2BA"
-                  stroke-miterlimit="10"
-                />
-                <path
-                  d="M16 16.5625C17.6973 16.5625 19.0938 15.1875 19.0938 13.4688C19.0938 11.7715 17.6973 10.375 16 10.375C14.2812 10.375 12.9062 11.7715 12.9062 13.4688C12.9062 15.1875 14.2812 16.5625 16 16.5625ZM16 11.4062C17.1172 11.4062 18.0625 12.3516 18.0625 13.4688C18.0625 14.6074 17.1172 15.5312 16 15.5312C14.8613 15.5312 13.9375 14.6074 13.9375 13.4688C13.9375 12.3516 14.8613 11.4062 16 11.4062ZM18.041 17.25H13.9375C12.0254 17.25 10.5 18.7969 10.5 20.6875C10.5 21.0742 10.8008 21.375 11.166 21.375H20.8125C21.1777 21.375 21.4785 21.0742 21.4785 20.6875C21.5 18.7969 19.9531 17.25 18.041 17.25ZM11.5527 20.3438C11.7031 19.1836 12.7129 18.2812 13.9375 18.2812H18.041C19.2441 18.2812 20.2539 19.1836 20.4258 20.3438H11.5527Z"
-                  fill="#ABB2BA"
-                />
-              </svg>
+              <span>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.5 16C31.5 24.5604 24.5604 31.5 16 31.5C7.43959 31.5 0.5 24.5604 0.5 16C0.5 7.43959 7.43959 0.5 16 0.5C24.5604 0.5 31.5 7.43959 31.5 16Z"
+                    fill="#F6F7F9"
+                    stroke="#ABB2BA"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    d="M16 16.5625C17.6973 16.5625 19.0938 15.1875 19.0938 13.4688C19.0938 11.7715 17.6973 10.375 16 10.375C14.2812 10.375 12.9062 11.7715 12.9062 13.4688C12.9062 15.1875 14.2812 16.5625 16 16.5625ZM16 11.4062C17.1172 11.4062 18.0625 12.3516 18.0625 13.4688C18.0625 14.6074 17.1172 15.5312 16 15.5312C14.8613 15.5312 13.9375 14.6074 13.9375 13.4688C13.9375 12.3516 14.8613 11.4062 16 11.4062ZM18.041 17.25H13.9375C12.0254 17.25 10.5 18.7969 10.5 20.6875C10.5 21.0742 10.8008 21.375 11.166 21.375H20.8125C21.1777 21.375 21.4785 21.0742 21.4785 20.6875C21.5 18.7969 19.9531 17.25 18.041 17.25ZM11.5527 20.3438C11.7031 19.1836 12.7129 18.2812 13.9375 18.2812H18.041C19.2441 18.2812 20.2539 19.1836 20.4258 20.3438H11.5527Z"
+                    fill="#ABB2BA"
+                  />
+                </svg>
+              </span>
               <span>Administrator</span>
-              </a
-            >
+            </a>
           </li>
           <li>
-            <a class="right-nav" href="#"
-              ><svg
-                width="17"
-                height="15"
-                viewBox="0 0 17 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 14.5H5C5.53125 14.5 6 14.0625 6 13.5C6 12.9688 5.53125 12.5 5 12.5H3C2.4375 12.5 2 12.0625 2 11.5V3.5C2 2.96875 2.4375 2.5 3 2.5H5C5.53125 2.5 6 2.0625 6 1.5C6 0.96875 5.53125 0.5 5 0.5H3C1.3125 0.5 0 1.84375 0 3.5V11.5C0 13.1562 1.3125 14.5 3 14.5ZM15.75 6.96875L11.25 2.71875C11.0312 2.5 10.7188 2.46875 10.4375 2.5625C10.1562 2.6875 10 2.96875 10 3.25V5.5H6C5.4375 5.5 5 5.96875 5 6.5V8.5C5 9.0625 5.4375 9.5 6 9.5H10V11.75C10 12.0312 10.1562 12.3125 10.4375 12.4375C10.7188 12.5312 11.0312 12.5 11.25 12.2812L15.75 8.03125C16.0625 7.78125 16.0625 7.25 15.75 6.96875Z"
-                  fill="#ABB2BA"
-                />
-              </svg>
-
-              Sign Out</a
+            <a class="right-nav" href="#">
+              <span
+                ><svg
+                  width="17"
+                  height="15"
+                  viewBox="0 0 17 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 14.5H5C5.53125 14.5 6 14.0625 6 13.5C6 12.9688 5.53125 12.5 5 12.5H3C2.4375 12.5 2 12.0625 2 11.5V3.5C2 2.96875 2.4375 2.5 3 2.5H5C5.53125 2.5 6 2.0625 6 1.5C6 0.96875 5.53125 0.5 5 0.5H3C1.3125 0.5 0 1.84375 0 3.5V11.5C0 13.1562 1.3125 14.5 3 14.5ZM15.75 6.96875L11.25 2.71875C11.0312 2.5 10.7188 2.46875 10.4375 2.5625C10.1562 2.6875 10 2.96875 10 3.25V5.5H6C5.4375 5.5 5 5.96875 5 6.5V8.5C5 9.0625 5.4375 9.5 6 9.5H10V11.75C10 12.0312 10.1562 12.3125 10.4375 12.4375C10.7188 12.5312 11.0312 12.5 11.25 12.2812L15.75 8.03125C16.0625 7.78125 16.0625 7.25 15.75 6.96875Z"
+                    fill="#ABB2BA"
+                  />
+                </svg>
+              </span>
+              <span>Sign Out</span></a
             >
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <hr />
     <div v-if="items.length">
       <BreadCrumbs :items="items" />
@@ -108,10 +112,6 @@ export default {
 </script>
 
 <style  scoped>
-.navbar-header {
-  margin-right: 2%;
-  margin-left: 2%;
-}
 .active {
   border-bottom: 4px solid red;
 }
@@ -123,6 +123,8 @@ export default {
 .navbar {
   margin-bottom: 0px;
   background-color: #fff;
+  padding-left: 40px;
+  padding-right: 30px;
 }
 hr {
   margin-bottom: 0px;
@@ -136,6 +138,7 @@ hr {
   line-height: 24px;
   color: #171a1d;
   line-height: 47px;
+  align-items: center;
 }
 .right-nav {
   font-family: "Open Sans";
@@ -144,10 +147,41 @@ hr {
   font-size: 14px;
   line-height: 47px;
   color: #171a1d;
+  display: flex;
 }
-
+.right-nav span svg {
+  margin-top: 7px;
+  margin-right: 12px;
+}
 .icon-custom {
   background: #f6f7f9;
   color: #abb2ba;
+}
+.navbar {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0px;
+}
+.navbar-nav a {
+  display: block;
+  padding: 15px;
+}
+.navbar-right {
+  margin-left: auto;
+}
+hr {
+  border-top: 1px solid #e0e5eb;
+}
+a.right-nav {
+  display: flex;
+  padding-bottom: 7px;
 }
 </style>
