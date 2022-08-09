@@ -1,15 +1,11 @@
 <script>
 export default {
-  name: 'Netwrix5Part',
-  props: {
-    
+  name: "Netwrix5Part",
+  props: {},
+  data() {
+    return {};
   },
-  data () {
-    return {
-      
-    }
-  }
-}
+};
 </script> 
 
 <template>
@@ -21,65 +17,140 @@ export default {
     <div class="tabs_content">
       <div class="tab_details">
         <div class="logo_section">
-          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg">
+          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg" />
         </div>
         <div class="content_details_section">
           <h5>AD Security Assessment</h5>
           <span>Active Directory</span>
           <p>Generated at 08/26/2021 9:40 PM</p>
         </div>
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="7.28122"
+            cy="6.50003"
+            r="4.99997"
+            stroke="#FF4751"
+            stroke-width="3"
+          />
+        </svg>
       </div>
     </div>
 
     <div class="tabs_content">
       <div class="tab_details">
         <div class="logo_section">
-          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg">
+          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg" />
         </div>
         <div class="content_details_section">
           <h5>Domain Shadow Access</h5>
           <span>Active Directory Permissions Analyzer</span>
           <p>Generated at 01/20/2022 4:09 AM</p>
         </div>
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="7.28122"
+            cy="6.50003"
+            r="4.99997"
+            stroke="#FF4751"
+            stroke-width="3"
+          />
+        </svg>
       </div>
     </div>
 
     <div class="tabs_content">
       <div class="tab_details">
         <div class="logo_section">
-          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg">
+          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg" />
         </div>
         <div class="content_details_section">
           <h5>Reset Password</h5>
           <span>Active Directory Permissions Analyzer</span>
           <p>Generated at 01/20/2022 4:07 AM</p>
         </div>
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="7.28122"
+            cy="6.50003"
+            r="4.99997"
+            stroke="#FF4751"
+            stroke-width="3"
+          />
+        </svg>
       </div>
     </div>
 
     <div class="tabs_content">
       <div class="tab_details">
         <div class="logo_section">
-          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg">
+          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg" />
         </div>
         <div class="content_details_section">
           <h5>Share Details</h5>
           <span>FileSystem</span>
           <p>Generated at 12/17/2021 1:21 PM</p>
         </div>
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="7.28122"
+            cy="6.50003"
+            r="4.99997"
+            stroke="#FF4751"
+            stroke-width="3"
+          />
+        </svg>
       </div>
     </div>
 
     <div class="tabs_content">
       <div class="tab_details">
         <div class="logo_section">
-          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg">
+          <img src="https://penmadsidrap.com/uploads/blog_image/default.jpg" />
         </div>
         <div class="content_details_section">
           <h5>Weak Password Checks</h5>
           <span>Active Directory</span>
           <p>Generated at 08/26/2021 9:02 PM</p>
         </div>
+        <svg
+          width="14"
+          height="13"
+          viewBox="0 0 14 13"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="7.28122"
+            cy="6.50003"
+            r="4.99997"
+            stroke="#FF4751"
+            stroke-width="3"
+          />
+        </svg>
       </div>
     </div>
   </div>
@@ -90,22 +161,22 @@ export default {
 .tabs_section {
   margin: 10px 0px 0px 0px;
   background: #fff;
-  border: 1px solid #DCDEE0;
+  border: 1px solid #dcdee0;
 }
 .tabs_heading {
-  border-bottom: 1px solid #E0E5EB;
+  border-bottom: 1px solid #e0e5eb;
 }
 .tabs_heading span {
-  background: #EEEEEE;
+  background: #eeeeee;
   padding: 5px 15px;
   font-size: 14px;
 }
 .tabs_heading span.active {
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 .tabs_content {
   padding: 10px 10px;
-  border-bottom: 1px solid #E0E5EB;
+  border-bottom: 1px solid #e0e5eb;
 }
 .tab_details {
   display: flex;
@@ -120,14 +191,14 @@ export default {
   padding: 0px 15px;
 }
 .content_details_section h5 {
-  color: #0068DA;
+  color: #0068da;
   padding: 0px;
   border: none;
   font-size: 14px;
   margin: 0;
 }
 .content_details_section span {
-  color: #0068DA;
+  color: #0068da;
   font-size: 14px;
 }
 .content_details_section p {

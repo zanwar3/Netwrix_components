@@ -12,69 +12,50 @@ export default {
     SectionHeader,
     PanelContent,
     PanelTable,
-    AppHeader
-},
+    AppHeader,
+  },
   data() {
     return {
       sesitiveFilesChart: {
         type: "pie",
         data: {
-        labels: [
-            'High Risk Shares',
-            'Medium Risk Shares',
-            'Low Risk Shares'
-        ],
-        datasets: [{
-            label: 'Share Risk Dataset',
-            data: [75, 0, 25],
-            backgroundColor: [
-            'rgba(255, 71, 81, 1)',
-            'rgba(252, 128, 39, 1)',
-            'rgba(52, 191, 70, 1)',
-
-            ],
-            hoverOffset: 4
-        }]
-        }
+          labels: ["High Risk Shares", "Medium Risk Shares", "Low Risk Shares"],
+          datasets: [
+            {
+              label: "Share Risk Dataset",
+              data: [75, 0, 25],
+              backgroundColor: [
+                "rgba(255, 71, 81, 1)",
+                "rgba(252, 128, 39, 1)",
+                "rgba(52, 191, 70, 1)",
+              ],
+              hoverOffset: 4,
+            },
+          ],
+        },
       },
       fileDetails: [
-        ["Share", "Users with Access", "% using All Rights", "% Using Some Rights", "% Unused","Overprovisioning Risk"],
         [
-          "Accounting",
-          "24",
-          "4",
-          "0",
-          "95",
-          "High",
-
+          "Share",
+          "Users with Access",
+          "% using All Rights",
+          "% Using Some Rights",
+          "% Unused",
+          "Overprovisioning Risk",
         ],
-        [
-         "Public",
-          "13",
-          "0",
-          "15",
-          "84",
-          "High",
-        ],
-        [
-          "Public",
-          "13",
-          "0",
-          "15",
-          "84",
-          "High",
-        ],
-        [
-          "Accounting",
-          "1",
-          "0",
-          "0",
-          "100",
-          "Low",
-        ],
+        ["Accounting", "24", "4", "0", "95", "High"],
+        ["Public", "13", "0", "15", "84", "High"],
+        ["Public", "13", "0", "15", "84", "High"],
+        ["Accounting", "1", "0", "0", "100", "Low"],
       ],
       filters: ["filter", "dropdown", "arrows"],
-      breadList:['Home','File System','Activity','Least Privileged Access','Overprovisioning Risk by Share']
+      breadList: [
+        "Home",
+        "File System",
+        "Activity",
+        "Least Privileged Access",
+        "Overprovisioning Risk by Share",
+      ],
     };
   },
 };
@@ -82,7 +63,7 @@ export default {
 
 <template>
   <div>
-    <AppHeader :items="breadList"/>
+    <AppHeader :items="breadList" />
     <div class="main_section">
       <SectionHeader
         heading="Overprovisioning Risk by Share"
@@ -114,15 +95,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
-.main-back{
-    background: #f5f5f5;
-  mix-blend-mode: normal;
-  opacity: 0.88;
-}
 .main_section {
   background: #f5f5f5;
   mix-blend-mode: normal;
   opacity: 0.88;
   min-height: 100vh;
+  .main-back {
+    background: #f5f5f5;
+    mix-blend-mode: normal;
+    opacity: 0.88;
+  }
 }
 </style>

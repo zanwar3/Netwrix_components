@@ -41,49 +41,51 @@ export default {
               </span>
             </th>
             <th colspan="100%">
-              <span
-                v-if="filters.includes('dropdown')"
-                style="margin-right: 10px"
-              >
-                Group by:
-                <div class="btn-group">
-                  <select
-                    v-model="selected"
-                    style="border: none; background: none"
+              <div class="flex_container">
+                <span
+                  v-if="filters.includes('dropdown')"
+                  style="margin-right: 10px"
+                >
+                  Group by:
+                  <span class="btn-group">
+                    <select
+                      v-model="selected"
+                      style="border: none; background: none"
+                    >
+                      <option disabled value="">None</option>
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                    </select>
+                  </span>
+                </span>
+                <span v-if="filters.includes('arrows')">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <option disabled value="">None</option>
-                    <option>A</option>
-                    <option>B</option>
-                    <option>C</option>
-                  </select>
-                </div>
-              </span>
-              <span v-if="filters.includes('arrows')">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8 0C3.5625 0 0 3.59375 0 8C0 12.4375 3.5625 16 8 16C12.4062 16 16 12.4375 16 8C16 3.59375 12.4062 0 8 0ZM12.1875 7.71875L8.6875 11.2188C8.5 11.4062 8.25 11.5 8 11.5C7.71875 11.5 7.46875 11.4062 7.28125 11.2188L3.78125 7.71875C3.375 7.34375 3.375 6.6875 3.78125 6.3125C4.15625 5.90625 4.8125 5.90625 5.1875 6.3125L8 9.09375L10.7812 6.3125C11.1562 5.90625 11.8125 5.90625 12.1875 6.3125C12.5938 6.6875 12.5938 7.34375 12.1875 7.71875Z"
-                    fill="#B7BCC1"
-                  />
-                </svg>
-                <svg
-                  width="17"
-                  height="16"
-                  viewBox="0 0 17 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M8.5 0C4.0625 0 0.5 3.59375 0.5 8C0.5 12.4375 4.0625 16 8.5 16C12.9062 16 16.5 12.4375 16.5 8C16.5 3.59375 12.9062 0 8.5 0ZM12.6875 9.71875C12.3125 10.125 11.6562 10.125 11.2812 9.71875L8.5 6.9375L5.6875 9.71875C5.3125 10.125 4.65625 10.125 4.28125 9.71875C3.875 9.34375 3.875 8.6875 4.28125 8.3125L7.78125 4.8125C7.96875 4.625 8.21875 4.5 8.5 4.5C8.75 4.5 9 4.625 9.1875 4.8125L12.6875 8.3125C13.0938 8.6875 13.0938 9.34375 12.6875 9.71875Z"
-                    fill="#B7BCC1"
-                  />
-                </svg>
-              </span>
+                    <path
+                      d="M8 0C3.5625 0 0 3.59375 0 8C0 12.4375 3.5625 16 8 16C12.4062 16 16 12.4375 16 8C16 3.59375 12.4062 0 8 0ZM12.1875 7.71875L8.6875 11.2188C8.5 11.4062 8.25 11.5 8 11.5C7.71875 11.5 7.46875 11.4062 7.28125 11.2188L3.78125 7.71875C3.375 7.34375 3.375 6.6875 3.78125 6.3125C4.15625 5.90625 4.8125 5.90625 5.1875 6.3125L8 9.09375L10.7812 6.3125C11.1562 5.90625 11.8125 5.90625 12.1875 6.3125C12.5938 6.6875 12.5938 7.34375 12.1875 7.71875Z"
+                      fill="#B7BCC1"
+                    />
+                  </svg>
+                  <svg
+                    width="17"
+                    height="16"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.5 0C4.0625 0 0.5 3.59375 0.5 8C0.5 12.4375 4.0625 16 8.5 16C12.9062 16 16.5 12.4375 16.5 8C16.5 3.59375 12.9062 0 8.5 0ZM12.6875 9.71875C12.3125 10.125 11.6562 10.125 11.2812 9.71875L8.5 6.9375L5.6875 9.71875C5.3125 10.125 4.65625 10.125 4.28125 9.71875C3.875 9.34375 3.875 8.6875 4.28125 8.3125L7.78125 4.8125C7.96875 4.625 8.21875 4.5 8.5 4.5C8.75 4.5 9 4.625 9.1875 4.8125L12.6875 8.3125C13.0938 8.6875 13.0938 9.34375 12.6875 9.71875Z"
+                      fill="#B7BCC1"
+                    />
+                  </svg>
+                </span>
+              </div>
             </th>
           </tr>
         </thead>

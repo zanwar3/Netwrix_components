@@ -53,14 +53,14 @@ export default {
           <Netwrix6Part2 heading="Open Folders" content="60" />
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-6 col-md-12">
+      <div class="flex_container">
+        <div class="two_col">
           <ChartView
             heading="Folders by Open Access"
             :chartData="foldersData"
           />
         </div>
-        <div class="col-xl-6 col-md-12">
+        <div class="two_col">
           <PanelTable
             heading=""
             :tableData="sharedFolders"

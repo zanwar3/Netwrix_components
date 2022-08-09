@@ -1,25 +1,23 @@
 <script>
 export default {
-  name: 'Netwrix7Part',
+  name: "Netwrix7Part",
   props: {
     heading: String,
     content: String,
     iconName: {
       type: String,
-      default: 'address-book'
+      default: "address-book",
     },
-    iconType: String
+    iconType: String,
   },
-  data () {
-    return {
-      
-    }
-  }
-}
+  data() {
+    return {};
+  },
+};
 </script> 
 
 <template>
-  <div class="col-xl-6 col-md-12">
+  <div class="two_col">
     <div class="d-flex my-2 bg-white p-3">
       <div class="image_section">
         <font-awesome-icon :icon="[iconType, iconName]" />
@@ -27,7 +25,9 @@ export default {
       <div class="data_section">
         <span>{{ heading }}</span>
         <p>{{ content }}</p>
-        <p class="tag"><font-awesome-icon icon="fa-solid fa-tag" />Sensitive Data</p>
+        <p class="tag">
+          <font-awesome-icon icon="fa-solid fa-tag" />Sensitive Data
+        </p>
       </div>
     </div>
   </div>
@@ -36,13 +36,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .image_section {
-    background: #229CFB;
-    width: 55px;
-    height: 50px;
-    color: #fff;
-    font-size: 22px;
-    display: flex;
-    border-radius: 50%;
+  background: #229cfb;
+  width: 55px;
+  height: 50px;
+  color: #fff;
+  font-size: 22px;
+  display: flex;
+  border-radius: 50%;
 }
 .image_section svg {
   margin: auto;
@@ -52,7 +52,7 @@ export default {
   width: 100%;
 }
 .data_section span {
-  color: #0068DA;
+  color: #0068da;
   font-size: 16px;
   line-height: 18px;
 }
@@ -61,5 +61,14 @@ export default {
   font-size: 13px;
   line-height: 18px;
   margin: 0px;
+}
+.tag {
+  color: #0068da;
+  font-size: 12px;
+  margin: 15px 0px 0px 0px;
+}
+.tag svg {
+  color: #229cfb;
+  margin: 0px 7px 0px 0px;
 }
 </style>

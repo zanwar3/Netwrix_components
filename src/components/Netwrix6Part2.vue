@@ -1,16 +1,14 @@
 <script>
 export default {
-  name: 'Netwrix6Part',
+  name: "Netwrix6Part",
   props: {
     heading: String,
     content: String,
   },
-  data () {
-    return {
-      
-    }
-  }
-}
+  data() {
+    return {};
+  },
+};
 </script> 
 
 <template>
@@ -27,22 +25,27 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .statistics {
-    width: 155px;
-    margin: 0 5px;
+  width: 155px;
+  margin: 0 5px;
 }
 .number {
-  background: #229CFB;
-  border: 1px solid #229CFB;
+  background: #229cfb;
+  border: 1px solid #229cfb;
   height: 120px;
   display: flex;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
 }
 .heading_text {
-  background: #CFDDFF;;
-  border: 1px solid #229CFB;
+  background: #cfddff;
+  border: 1px solid #229cfb;
   display: flex;
   height: 40px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
-.number p, .heading_text p {
+.number p,
+.heading_text p {
   margin: auto;
 }
 .number p {

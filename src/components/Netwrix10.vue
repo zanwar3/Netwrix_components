@@ -52,15 +52,39 @@ export default {
         ["Effective Access", 1, 0, 2, 0],
         ["Least Privileges", 1, 0, 2, 0],
       ],
-      tabsData:[
-        "Hight",
-        "Low",
-        "Medium",
-      ],
+      tabsData: ["High", "Low", "Medium"],
       details: [
-        ["Categaory","Check","Findings"],
-        ["Open Access","% of All shares",60],
-        ["Sensitive Data","% of files exposed Through Open Access",73],
+        [
+          ["Categaory", "Check", "Findings"],
+          ["Open Access", "% of All shares", 60],
+          ["Sensitive Data", "% of files exposed Through Open Access", 73],
+        ],
+        [
+          ["Categaory", "Check", "Findings"],
+          ["Open Access", "% of All shares", 60],
+          ["Sensitive Data ", "% of files exposed Through Open Access", 73],
+          ["Stale Data", "Folders with Stale Data ", 1744],
+          ["Stale Data", "Stale Files", 57085],
+          ["Direct Permissions", "Direct User Permissions", 94],
+          ["Activity", "Active Users", 5],
+          ["Open Access", "% of Users with High Risk Activity", 0],
+          ["Broken Inheritance", "Folders with Permission Changes", 140],
+          ["Direct Permissions", "Folders with Local Account Permissions", 16],
+          ["Direct Permissions", "Nested Shares", 1],
+        ],
+        [
+          ["Categaory", "Check", "Findings"],
+          ["Open Access 2", "% of All shares", 60],
+          ["Sensitive Data 2", "% of files exposed Through Open Access", 73],
+          ["Stale Data 2", "Folders with Stale Data ", 1744],
+          ["Stale Data 2", "Stale Files", 57085],
+          ["Direct Permissions", "Direct User Permissions", 94],
+          ["Activity", "Active Users", 5],
+          ["Open Access", "% of Users with High Risk Activity", 0],
+          ["Broken Inheritance", "Folders with Permission Changes", 140],
+          ["Direct Permissions", "Folders with Local Account Permissions", 16],
+          ["Direct Permissions", "Nested Shares", 1],
+        ],
       ]
     };
   },
@@ -69,10 +93,10 @@ export default {
 <template>
   <div>
     <div class="main_section">
-      <AppHeader :items="['Home','File System','Security Assesment']"/>
+      <AppHeader :items="['Home', 'File System', 'Security Assesment']" />
       <SectionHeader
-        heading="Shares with Sensitive Content"
-        content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access."
+        heading="Security Assessment"
+        content="DESCRIPTION This report identifies common issues and vulnerabilities across your file systems."
       />
       <div class="container">
         <div class="row">
@@ -80,11 +104,11 @@ export default {
             <PanelTable heading="Scope" :tableData="scopeData" :filters="[]" />
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-6 col-md-12">
+        <div class="flex_container">
+          <div class="two_col">
             <chartView heading=" " :chartData="sesitiveFilesChart" />
           </div>
-          <div class="col-xl-6 col-md-12">
+          <div class="two_col">
             <PanelTable
               heading="Findings by category"
               :tableData="findingsData"
@@ -92,15 +116,14 @@ export default {
             />
           </div>
         </div>
-        <div class="col-xl-12">
-          <PanelTabsTable
-              heading=" "
-              :tableData="details"
-              :tabsData="tabsData"
-              :filters="['filter']"
-              :tabsHeading="'Risk'"
-            />
-        </div>
+        <PanelTabsTable
+          heading=" "
+          :tabsContent="details"
+          :tabsData="tabsData"
+          :filters="['filter']"
+          :tabsHeading="'Risk'"
+          :activeTab="0"
+        />
       </div>
     </div>
   </div>

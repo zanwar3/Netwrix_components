@@ -107,14 +107,14 @@ export default {
         content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access."
       />
       <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-md-12">
+        <div class="flex_container">
+          <div class="two_col">
             <chartView
               heading="Top Shares By Sensitive File Count"
               :chartData="sesitiveFilesChart"
             />
           </div>
-          <div class="col-xl-6 col-md-12">
+          <div class="two_col">
             <PanelTable
               heading="Top Shares by Sensitive File Count"
               :tableData="sesitiveFiles"
@@ -122,7 +122,7 @@ export default {
             />
           </div>
         </div>
-        <div class="col-xl-12">
+        <div>
           <PanelTable
             heading="File Details"
             :tableData="fileDetails"

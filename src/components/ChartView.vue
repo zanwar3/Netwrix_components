@@ -37,4 +37,8 @@ export default {
   .left-chart{
     width: 50%;
   }
+  .panel-body{
+    padding-bottom: 30px;
+  }
+  
 </style>

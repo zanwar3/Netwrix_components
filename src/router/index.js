@@ -8,7 +8,6 @@ import Netwrix5 from '@/components/Netwrix5'
 import Netwrix6 from '@/components/Netwrix6'
 import Netwrix7 from '@/components/Netwrix7'
 import Netwrix8 from '@/components/Netwrix8'
-import Netwrix9 from '@/components/Netwrix9'
 import Netwrix10 from '@/components/Netwrix10'
 import Netwrix14 from '@/components/Netwrix14'
 import Netwrix17 from '@/components/Netwrix17'
@@ -41,11 +40,6 @@ export default new Router({
       path: '/8',
       name: 'Netwrix8',
       component: Netwrix8
-    },
-    {
-      path: '/9',
-      name: 'Netwrix9',
-      component: Netwrix9
     },
     {
       path: '/10',

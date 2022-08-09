@@ -67,10 +67,13 @@ ol.breadcrumb li + li:before {
 }
 .breadcrumb-section {
   background-color: #fff;
+  margin-bottom: 15px;
 }
 .breadcrumb {
   display: flex;
   list-style-type: none;
   margin: 0px;
+  padding: 12px 15px;
 }
+
 </style>
