@@ -23,7 +23,7 @@ export default {
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .statistics {
   width: 155px;
   margin: 0 5px;
@@ -35,24 +35,21 @@ export default {
   display: flex;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  p {
+    margin: auto;
+    color: #fff;
+    font-size: 48px;
+  }
 }
 .heading_text {
   background: #cfddff;
-  border: 1px solid #229cfb;
   display: flex;
   height: 40px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-}
-.number p,
-.heading_text p {
-  margin: auto;
-}
-.number p {
-  color: #fff;
-  font-size: 48px;
-}
-.heading_text p {
-  color: #354556;
+  p {
+    margin: auto;
+    color: #354556;
+  }
 }
 </style>

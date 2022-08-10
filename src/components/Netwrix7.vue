@@ -42,14 +42,14 @@
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .reports_section {
     padding: 10px 10px;
-}
-.reports_section h5 {
-  margin: 0px;
-  padding: 5px 10px;
-  border-bottom: 1px solid #E0E5EB;
-  font-size: 14px;
+    h5 {
+    margin: 0px;
+    padding: 5px 10px;
+    border-bottom: 1px solid #E0E5EB;
+    font-size: 14px;
+  }
 }
 </style>

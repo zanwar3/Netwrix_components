@@ -3,7 +3,6 @@
 import AppHeader from "./AppHeader.vue";
 import ChartView from "./ChartView.vue";
 import SectionHeader from "./SectionHeader.vue";
-import PanelContent from "./PanelContent.vue";
 import PanelTable from "./PanelTable.vue";
 export default {
   name: "Netwrix8",
@@ -11,7 +10,6 @@ export default {
     AppHeader,
     ChartView,
     SectionHeader,
-    PanelContent,
     PanelTable,
   },
   data() {
@@ -133,15 +131,3 @@ export default {
     </div>
   </div>
 </template>
-
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.main_section {
-  background: #f5f5f5;
-  mix-blend-mode: normal;
-  opacity: 0.88;
-  min-height: 100vh;
-}
-</style>

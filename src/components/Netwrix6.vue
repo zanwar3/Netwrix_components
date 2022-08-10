@@ -75,7 +75,7 @@ export default {
 
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .statistics_section_main {
   display: flex;
   margin: 30px 0px;

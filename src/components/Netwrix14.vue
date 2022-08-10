@@ -2,7 +2,6 @@
 <script>
 import ChartView from "./ChartView.vue";
 import SectionHeader from "./SectionHeader.vue";
-import PanelContent from "./PanelContent.vue";
 import PanelTable from "./PanelTable.vue";
 import AppHeader from "./AppHeader.vue";
 export default {
@@ -10,7 +9,6 @@ export default {
   components: {
     ChartView,
     SectionHeader,
-    PanelContent,
     PanelTable,
     AppHeader,
   },

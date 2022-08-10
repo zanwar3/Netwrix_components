@@ -128,15 +128,3 @@ export default {
     </div>
   </div>
 </template>
-
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.main_section {
-  background: #f5f5f5;
-  mix-blend-mode: normal;
-  opacity: 0.88;
-  min-height: 100vh;
-}
-</style>

@@ -34,7 +34,7 @@ export default {
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .image_section {
   background: #229cfb;
   width: 55px;
@@ -43,32 +43,24 @@ export default {
   font-size: 22px;
   display: flex;
   border-radius: 50%;
-}
-.image_section svg {
-  margin: auto;
+  svg {
+    margin: auto;
+  }
 }
 .data_section {
   padding: 0px 10px;
   width: 100%;
-}
-.data_section span {
-  color: #0068da;
-  font-size: 16px;
-  line-height: 18px;
-}
-.data_section p {
-  color: #707070;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 0px;
-}
-.tag {
-  color: #0068da;
-  font-size: 12px;
-  margin: 15px 0px 0px 0px;
-}
-.tag svg {
-  color: #229cfb;
-  margin: 0px 7px 0px 0px;
+  span {
+    color: #0068da;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  p {
+    color: #707070;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
 }
 </style>

@@ -3,7 +3,6 @@
 import AppHeader from "./AppHeader.vue";
 import ChartView from "./ChartView.vue";
 import SectionHeader from "./SectionHeader.vue";
-import PanelContent from "./PanelContent.vue";
 import PanelTable from "./PanelTable.vue";
 import PanelTabsTable from "./PanelTabsTable.vue";
 export default {
@@ -12,7 +11,6 @@ export default {
     AppHeader,
     ChartView,
     SectionHeader,
-    PanelContent,
     PanelTable,
     PanelTabsTable,
   },
@@ -598,9 +596,3 @@ export default {
     </div>
   </div>
 </template>
-
-
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

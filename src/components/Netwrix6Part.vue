@@ -1,15 +1,11 @@
 <script>
 export default {
-  name: 'Netwrix6Part',
-  props: {
-    
+  name: "Netwrix6Part",
+  props: {},
+  data() {
+    return {};
   },
-  data () {
-    return {
-      
-    }
-  }
-}
+};
 </script> 
 
 <template>
@@ -20,7 +16,11 @@ export default {
       </div>
       <div class="filesystem_content">
         <h5>FileSystem</h5>
-        <p>The File Systems job group is designed to provide essential information about targeted file servers. Key information includes discovered sensitive data, activity reporting, and access reporting.</p>
+        <p>
+          The File Systems job group is designed to provide essential
+          information about targeted file servers. Key information includes
+          discovered sensitive data, activity reporting, and access reporting.
+        </p>
       </div>
     </div>
     <div class="filesystem_links">
@@ -73,35 +73,35 @@ export default {
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .filesystem_section {
   display: flex;
 }
 .filesystem_icon {
-  background: #5F7D8B;
+  background: #5f7d8b;
   min-width: 85px;
   min-height: 70px;
   color: #fff;
   font-size: 26px;
   display: flex;
-}
-.filesystem_icon svg {
-  margin: auto;
+  svg {
+    margin: auto;
+  }
 }
 .filesystem_content {
-  background: #E9E9E9;
+  background: #e9e9e9;
   padding: 10px 10px;
-}
-.filesystem_content h5 {
-  font-size: 20px;
-  color: #354556;
-}
-.filesystem_content p {
-  font-size: 14px;
-  color: #354556;
+  h5 {
+    font-size: 20px;
+    color: #354556;
+  }
+  p {
+    font-size: 14px;
+    color: #354556;
+  }
 }
 .filesystem_links {
-  background: #DFE1E2;
+  background: #dfe1e2;
   padding: 10px 10px;
   display: table;
 }
@@ -109,14 +109,14 @@ export default {
   display: flex;
   margin: 5px 15px 5px 0px;
   float: left;
-}
-.filesystem_links_content svg {
-  color: #229CFB;
-  margin: 1px 10px 0px 0px;
-}
-.filesystem_links_content p {
-  color: #354556;
-  font-size: 14px;
-  margin: 0px;
+  svg {
+    color: #229cfb;
+    margin: 1px 10px 0px 0px;
+  }
+  p {
+    color: #354556;
+    font-size: 14px;
+    margin: 0px;
+  }
 }
 </style>

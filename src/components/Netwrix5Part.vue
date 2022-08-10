@@ -157,7 +157,7 @@ export default {
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .tabs_section {
   margin: 10px 0px 0px 0px;
   background: #fff;
@@ -165,14 +165,14 @@ export default {
 }
 .tabs_heading {
   border-bottom: 1px solid #e0e5eb;
-}
-.tabs_heading span {
-  background: #eeeeee;
-  padding: 5px 15px;
-  font-size: 14px;
-}
-.tabs_heading span.active {
-  background: #c4c4c4;
+  span {
+    background: #eeeeee;
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  span.active {
+    background: #c4c4c4;
+  }
 }
 .tabs_content {
   padding: 10px 10px;
@@ -189,21 +189,21 @@ export default {
 .content_details_section {
   width: 100%;
   padding: 0px 15px;
-}
-.content_details_section h5 {
-  color: #0068da;
-  padding: 0px;
-  border: none;
-  font-size: 14px;
-  margin: 0;
-}
-.content_details_section span {
-  color: #0068da;
-  font-size: 14px;
-}
-.content_details_section p {
-  color: #707070;
-  font-size: 14px;
-  margin: 0px;
+  h5 {
+    color: #0068da;
+    padding: 0px;
+    border: none;
+    font-size: 14px;
+    margin: 0;
+  }
+  span {
+    color: #0068da;
+    font-size: 14px;
+  }
+  p {
+    color: #707070;
+    font-size: 14px;
+    margin: 0px;
+  }
 }
 </style>
