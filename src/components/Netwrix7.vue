@@ -52,4 +52,9 @@
   border-bottom: 1px solid #E0E5EB;
   font-size: 14px;
 }
+p{
+   background: #ffffff;
+    margin: 0px;
+    padding: 10px;
+}
 </style>

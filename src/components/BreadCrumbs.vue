@@ -67,7 +67,7 @@ ol.breadcrumb li + li:before {
 }
 .breadcrumb-section {
   background-color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 .breadcrumb {
   display: flex;

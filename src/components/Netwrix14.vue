@@ -68,6 +68,7 @@ export default {
       <SectionHeader
         heading="Overprovisioning Risk by Share"
         content="This report identifies shares with the largest amount of unutilized entitlements and assigns a risk rating to each one."
+        tag="Security Assesment"
       />
       <div class="container">
         <div class="row">

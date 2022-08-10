@@ -105,6 +105,7 @@ export default {
       <SectionHeader
         heading="Shares with Sensitive Content"
         content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access."
+        tag="Sensitive Data"
       />
       <div class="container">
         <div class="flex_container">

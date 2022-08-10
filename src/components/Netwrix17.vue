@@ -105,6 +105,7 @@ export default {
       <SectionHeader
         heading="Shares with Sensitive Content"
         content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access."
+        tag="Sensitive Data"
       />
       <div class="container">
         <div class="flex_container">
@@ -228,9 +229,9 @@ export default {
                         <tr>
                           <td>ENT\\MiguelSeverino</td>
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -276,9 +277,9 @@ export default {
                         <tr>
                           <td>ENT\\AndreasSchou</td>
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -324,9 +325,9 @@ export default {
                         <tr>
                           <td>ENT\\AxelDelgado</td>
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -385,9 +386,9 @@ export default {
                         <tr>
                           <td>ENT\\BorisScholl</td>
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -446,9 +447,9 @@ export default {
                         <tr>
                           <td>ENT\\ChrisBryant</td>
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -493,9 +494,9 @@ export default {
                         <tr>
                           <td>ENT\\DenisDehenne</td>
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -542,9 +543,9 @@ export default {
                           <td>ENT\\LucaDellamore</td>
 
                           <td>
-                            <svg
-                              width="17"
-                              height="17"
+                            <svg class="svg-margin"
+                              width="14"
+                              height="14"
                               viewBox="0 0 17 17"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
@@ -603,4 +604,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.svg-margin{
+  margin:-2px;
+}
 </style>
