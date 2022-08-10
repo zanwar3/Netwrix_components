@@ -156,4 +156,7 @@ tr {
     margin: 0px 7px 0px 0px;
   }
 }
+.active-content{
+  border: 2px solid red;
+}
 </style>

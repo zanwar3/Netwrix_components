@@ -29,7 +29,7 @@
               <Netwrix7Part heading="File Ownership" content="This report identifies the top 3 potential owners of files which have been found to contain sensitive content." iconName="image" />
               <Netwrix7Part heading="Sensitive Data Access" content="This report shows who is accessing sensitive data. Emphasis is placed on activity within the last 30 days." iconName="image" />
               <Netwrix7Part heading="Sensitive Security Groups" content="This report identifies groups which are used to provide access to sensitive data. Changes to membership should be closely monitored." iconName="image" />
-              <Netwrix7Part heading="Share Details" content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access." iconName="image" />
+              <Netwrix7Part heading="Share Details" content="This report identifies the location of sensitive data, and flags whether or not this data is accessible through open access." iconName="image" activate=true />
               <div class="two_col"></div>
             </div>
           </div>

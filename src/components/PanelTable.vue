@@ -5,6 +5,7 @@ export default {
     heading: String,
     tableData: Array,
     filters: Array,
+    activateRow:Number
   },
   components: {},
   data() {
@@ -92,7 +93,7 @@ export default {
         <tbody>
           <tr
             v-for="(tableRow, index) in tableData"
-            :class="{ 'light-black': index == 0 }"
+            :class="{ 'light-black': index == 0 , 'active-content':index==activateRow}"
           >
             <td v-for="tableData in tableRow" scope="row">{{ tableData }}</td>
           </tr>

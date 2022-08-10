@@ -44,27 +44,27 @@ export default {
         <p>BROKEN INHERITANCE CLEANUP CONTENT</p>
       </div>
 
-      <div class="filesystem_links_content">
+      <div class="filesystem_links_content ">
         <font-awesome-icon icon="fa-solid fa-folder" />
         <p>DIRECT PERMISSIONS</p>
       </div>
 
-      <div class="filesystem_links_content">
+      <div class="filesystem_links_content ">
         <font-awesome-icon icon="fa-solid fa-folder" />
         <p>OPEN ACCESS</p>
       </div>
 
-      <div class="filesystem_links_content">
+      <div class="filesystem_links_content ">
         <font-awesome-icon icon="fa-solid fa-folder" />
         <p>PROBABLE OWNER</p>
       </div>
 
-      <div class="filesystem_links_content">
+      <div class="filesystem_links_content ">
         <font-awesome-icon icon="fa-solid fa-folder" />
         <p>RESOURCE BASED GROUPS</p>
       </div>
 
-      <div class="filesystem_links_content">
+      <div class="filesystem_links_content ">
         <font-awesome-icon icon="fa-solid fa-folder" />
         <p>SENSITIVE DATA</p>
       </div>

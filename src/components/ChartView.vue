@@ -6,6 +6,7 @@ export default {
     heading: String,
     chartData: Object,
     align: String,
+    activate:Boolean
   },
   components: {
     Chart
@@ -19,7 +20,7 @@ export default {
 </script> 
 
 <template>
-    <div class="panel panel-primary">
+    <div class="panel panel-primary" :class="{'active-content':activate}">
         <div class="panel-heading">
             <h3 class="panel-title">{{ heading }}</h3>
         </div>
