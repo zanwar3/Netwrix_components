@@ -14,7 +14,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 
 import vSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css';
-
+import fonts from "./assets/fonts.css";
 /* add icons to the library */
 library.add(fas)
 library.add(fab)

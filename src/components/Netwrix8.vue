@@ -111,6 +111,7 @@ export default {
             <chartView
               heading="Top Shares By Sensitive File Count"
               :chartData="sesitiveFilesChart"
+              activate="true"
             />
           </div>
           <div class="two_col">

@@ -124,6 +124,7 @@ export default {
           :filters="['filter']"
           :tabsHeading="'Risk'"
           :activeTab="0"
+          :activateRow="2"
         />
       </div>
     </div>

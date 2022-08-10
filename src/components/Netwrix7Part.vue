@@ -9,6 +9,7 @@ export default {
       default: "address-book",
     },
     iconType: String,
+    activate:Boolean
   },
   data() {
     return {};
@@ -18,7 +19,7 @@ export default {
 
 <template>
   <div class="two_col">
-    <div class="d-flex my-2 bg-white p-3">
+    <div class="d-flex my-2 bg-white p-3" :class="{'active-content':activate}">
       <div class="image_section">
         <font-awesome-icon :icon="[iconType, iconName]" />
       </div>

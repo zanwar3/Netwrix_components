@@ -40,6 +40,7 @@ export default {
                     heading="Active Directory"
                     content="Inventory Active Directory users, groups and computers."
                     iconName="users"
+                    activate="true"
                   />
                   <Netwrix3Part
                     heading="Active Directory Permissions Analyzer"
