@@ -97,6 +97,7 @@ export default {
       <SectionHeader
         heading="Security Assessment"
         content="DESCRIPTION This report identifies common issues and vulnerabilities across your file systems."
+        tag="Security Assesment"
       />
       <div class="container">
         <div class="row">

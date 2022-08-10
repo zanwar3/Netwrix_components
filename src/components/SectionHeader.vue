@@ -4,6 +4,7 @@ export default {
   props: {
     heading: String,
     content: String,
+    tag:String
   },
   components: {},
   data() {
@@ -18,7 +19,7 @@ export default {
       <div class="d-flex">
         <h5>{{ heading }}</h5>
         <span class="tag"
-          ><font-awesome-icon icon="fa-solid fa-tag" />Sensitive Data</span
+          ><font-awesome-icon icon="fa-solid fa-tag" />{{tag}}</span
         >
       </div>
       <p>{{ content }}</p>

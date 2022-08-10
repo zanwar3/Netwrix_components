@@ -52,4 +52,9 @@
     font-size: 14px;
   }
 }
+p{
+   background: #ffffff;
+    margin: 0px;
+    padding: 10px;
+}
 </style>
