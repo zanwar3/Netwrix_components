@@ -99,12 +99,7 @@ export default {
               iconName="windows"
               iconType="fab"
             />
-            <Netwrix3Part
-              heading=""
-              content=""
-              iconName=""
-              iconType=""
-            />
+            <div class="two_col"></div>
           </div>
         </div>
       </div>

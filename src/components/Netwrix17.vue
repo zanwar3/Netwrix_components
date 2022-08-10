@@ -598,7 +598,7 @@ export default {
   </div>
 </template>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="less" scoped>
 .svg-margin{
   margin:-2px;
 }
