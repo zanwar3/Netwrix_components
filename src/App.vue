@@ -156,4 +156,65 @@ tr {
     margin: 0px 7px 0px 0px;
   }
 }
+.table_button {
+  background: #229CFB;
+  color: #fff;
+  border: none;
+  margin: 0px 10px 0px 0px;
+  padding: 5px 15px;
+  font-size: 13px;
+}
+.bg_gray {
+  background: #C9CCCF;
+  color: #354556;
+}
+.bg_green {
+  background: #34BF46;
+  color: #fff;
+}
+.w-100 {
+  width: 100%;
+}
+.tabs {
+  display: flex;
+  background: #FFF;
+  span {
+    margin: auto;
+    margin-right: 10px;
+    font-size: 45px;
+    color: #727D89;
+  }
+  h5 {
+    margin: 0px;
+    font-size: 16px;
+    color: #727D89;
+  }
+  p {
+    margin: 5px 0px 0px 0px;
+    font-size: 14px;
+    color: #727D89;
+  }
+  .active {
+    background: #229CFB;
+    span {
+      color: #fff;
+    }
+    h5 {
+      color: #fff;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+.table_tabs {
+  display: flex;
+  svg {
+    margin: auto;
+    margin-left: 40px;
+  }
+  p {
+    margin: 0px 10px;
+  }
+}
 </style>

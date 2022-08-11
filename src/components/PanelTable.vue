@@ -17,7 +17,7 @@ export default {
 
 <template>
   <div class="panel panel-primary">
-    <div class="panel-heading">
+    <div class="panel-heading" v-if="heading">
       <h3 class="panel-title">{{ heading }}</h3>
     </div>
     <div class="">

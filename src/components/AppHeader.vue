@@ -43,7 +43,9 @@
           <li class="active nav-links">
             <a class="left-nav" href="#">Reports</a>
           </li>
-          <li class="nav-links"><a href="#" class="left-nav">Access</a></li>
+          <li class="nav-links">
+            <a href="#" class="left-nav">Access</a>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li>

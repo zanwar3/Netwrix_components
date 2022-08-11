@@ -11,6 +11,10 @@ import Netwrix8 from '@/components/Netwrix8'
 import Netwrix10 from '@/components/Netwrix10'
 import Netwrix14 from '@/components/Netwrix14'
 import Netwrix17 from '@/components/Netwrix17'
+import Netwrix2_3 from '@/components/Netwrix2_3'
+import Netwrix2_4 from '@/components/Netwrix2_4'
+import Netwrix2_9 from '@/components/Netwrix2_9'
+import Netwrix2_10 from '@/components/Netwrix2_10'
 
 Vue.use(Router)
 
@@ -55,6 +59,26 @@ export default new Router({
       path: '/17',
       name: 'Netwrix17',
       component: Netwrix17
-    }
+    },
+    {
+      path: '/2/3',
+      name: 'Netwrix2_3',
+      component: Netwrix2_3
+    },
+    {
+      path: '/2/4',
+      name: 'Netwrix2_4',
+      component: Netwrix2_4
+    },
+    {
+      path: '/2/9',
+      name: 'Netwrix2_9',
+      component: Netwrix2_9
+    },
+    {
+      path: '/2/10',
+      name: 'Netwrix2_10',
+      component: Netwrix2_10
+    },
   ]
 })
